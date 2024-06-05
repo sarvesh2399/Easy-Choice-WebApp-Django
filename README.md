@@ -12,8 +12,6 @@
 + It is developed using the Django framework along with HTML, CSS, JavaScript, and Python.
 + Here is a short review video of the project.
 
-<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/9003ec3d-542b-434d-8e2e-57509bad6e51" alt="Video" width="600" height="300">
-
 
 -----
 
@@ -24,18 +22,19 @@
 
 <img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/ce5d83eb-0bd5-4468-ae58-8f60ca38187c" alt="Screenshot 2024-06-06 001558" width="600" height="300">
 
-
-  
 + Product Selection: Once logged in, users can browse and purchase stationery items by filtering specific products.
 + Secure Payments: Payments can be made via Razorpay, ensuring a secure transaction process.
 
-  ![Screenshot 2024-06-06 001829](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/70f0e3a2-d9b8-4468-97a9-0dd377d6ee66)
+<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/70f0e3a2-d9b8-4468-97a9-0dd377d6ee66" alt="Screenshot 2024-06-06 001829" width="600" height="300">
+)
   
 + Automated Order Confirmation: Upon successful payment, users receive an automated email confirming their recent purchases.
 
-![Screenshot 2024-06-06 001838](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/5fbde7b8-021c-45ee-b320-924313a2d6c6)
+<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/5fbde7b8-021c-45ee-b320-924313a2d6c6" alt="Screenshot 2024-06-06 001838" width="600" height="300">
 
-![Screenshot](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/465c50f3-4edf-4d1f-a516-84f0c933288d)
+
+<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/465c50f3-4edf-4d1f-a516-84f0c933288d" alt="Screenshot" width="600" height="300">
+
 
 -----
 
