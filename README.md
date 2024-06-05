@@ -14,7 +14,6 @@
 
 https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6
 
-[![Watch the video](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6/VIDEO_THUMBNAIL_IMAGE.jpg)](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6/VIDEO_URL)
 
 
 -----
