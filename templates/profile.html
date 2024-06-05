@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% load static %}
+
+
+<!-- start main section -->
+
+
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+                <div class="card card-registration card-registration-2" style="border-radius: 20px; overflow: hidden;">
+                    <div class="card-body p-0"  style="background-color: #c7d2fe;">
+                        <h2 style="text-align: center; background-color: #a5b4fc;">Profile</h2>
+                        <div class="row mt-1" style="margin-left: 40px; margin-bottom: 50px;">
+                            <div class="col-md-6 mt-5 container-fluid">
+                                <img src="{% static './assets/images/profile4.jpg' %}" style="width: 200px; height: 200px;; margin-left: 150px; border-radius: 25%;">
+                            </div>
+                            <div class="col-md-6 mt-5">
+                                <p><b>Name:</b>&nbsp;&nbsp;&nbsp; {{ request.user.username }}</p>
+                                <p><b>Email:</b>&nbsp;&nbsp;&nbsp; {{ request.user.username }}</p>
+                                <p><b>Mobile:</b>&nbsp;&nbsp;&nbsp; 9999999999</p>
+                                <br>
+                                <!-- <a href="#" class="btn btn-primary">Your Orders</a> &nbsp;&nbsp; -->
+                                <a href="/placeorder" class="btn btn-primary">Your Orders</a> &nbsp;&nbsp;
+                                <a href="/home" class="btn btn-primary">Shop More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- end main section -->
+
+{% endblock 'main' %}

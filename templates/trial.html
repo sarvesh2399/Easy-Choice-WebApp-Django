@@ -1,0 +1,395 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Choice</title>
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static './assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body style="overflow-x: hidden; top: 0; padding-top: 70px; background-color: #e0e7ff;">
+    <hr>
+    <!-- Start Navbar(Header) -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #a5b4fc; top: 0; height: 90px; position: fixed; width: 100%; z-index: 1000; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a><img src="{% static 'assets/images/logo2.jpg' %}" alt="" class="logo"
+                style="height: 70px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: small;
+                white-space: nowrap;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <h6>ALL</h6>
+                        </a>
+                    </li>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h6>PENS</h6>
+                        </a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <h6>ORGANIZERS</h6>
+                </a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h6>CALCULATORS</h6>
+                        </a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h6>ART & COLORS</h6>
+                        </a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <h6>DIARIES & NOTEBOOKS</h6>
+                        </a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for products"
+                            aria-label="Search" style="width: 100%; background-color: #E2E2E2">
+                        <button class="btn btn-outline-primary" type="submit" style="text-align: center;">
+                            <h6 style="color: black;">Search&nbsp;&nbsp;<i class="fa fa-search"
+                                    style="font-size:17px"></i></h6>
+                        </button>
+                    </form>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a href="./profile.html" class="btn btn-outline-primary" style="text-align: center;">
+                            <h6 style="color: black;">Profile&nbsp;&nbsp;<i class="btn-outline fa fa-user"
+                                    style="font-size:17px"></i></h6>
+                        </a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a href="./cart.html" class="btn btn-outline-primary" style="text-align: center;">
+                            <h6 style="color: black;">Cart&nbsp;&nbsp;<i class="btn-outline fa fa-shopping-cart"
+                                    style="font-size:17px"></i></h6>
+                        </a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a href="./login.html" class="btn btn-outline-primary" style="text-align: center;">
+                            <h6 style="color: black;">Login&nbsp;&nbsp;<i class="btn-outline fa fa-sign-in"
+                                    style="font-size:17px"></i></h6>
+                        </a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-outline-primary" style="text-align: center;">
+                            <h6 style="color: black;">Logout&nbsp;&nbsp;<i class="btn-outline fa fa-sign-out"
+                                    style="font-size:17px"></i></h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar(Header) -->
+
+
+
+    <!-- Start Main Page -->
+    <!-- Start carousel -->
+
+    <div class="mainpage container-fluid" style="margin-top: 10px; width: 98%;">
+        <div class="row mt-3">
+            <!-- col 1/filter section -->
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/images/car1.jpg" class="d-block w-100" height="180px" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/images/car2.jpg" class="d-block w-100" height="180" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/images/car3.jpg" class="d-block w-100" height="180" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Start carousel -->
+
+            <!-- col 2/cards section -->
+            <div class="col-md-12">
+                <!-- <h3>Products</h3> -->
+                <!-- Row 1 -->
+                <div class="row" style="margin-top: 20px;">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-2" style="width:20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-2" style="width:20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-2" style="width:20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="width:20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="width:20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row" style="margin-top: 20px;">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+
+                <div class="row" style="margin-top: 20px;">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="width: 20%;">
+                        <div class="card" style="width:100%;">
+                            <div class="text-center">
+                                <img src="./assets/images/logo2.jpg" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Rs. 20000</p>
+                                <a href="./productDetails.html" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End cards section -->
+
+
+        <!-- End Main Page -->
+    </div>
+
+    <!-- Start Footer -->
+    <div class="footer row mt-5  p-3" style="background-color: #a5b4fc;">
+        <!-- Col1 -->
+        <div class="col-md-4">
+            <h5>Address</h5>
+            <hr>
+            Blooming Dale, Sector 32A, PCNTDA, Ravet, Akurdi, Pune, Pin-412101
+        </div>
+        <!-- Col2 -->
+        <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <hr>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </div>
+        <!-- Col3 -->
+        <div class="col-md-4">
+            <h5>Connect Us</h5>
+            <hr>
+            <h4><a href="https://www.facebook.com/"><i class="bi bi-facebook text-primary"></i></a></h4>
+            <h4><a href="https://www.instagram.com/"><i class="bi bi-instagram text-primary"></i></a></h4>
+            <h4><a href="https://www.twitter.com/"><i class="bi bi-twitter text-primary"></i></a></h4>
+        </div>
+
+    </div>
+    <!-- End Footer -->
+
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

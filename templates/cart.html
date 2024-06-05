@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% load static %}
+
+
+<!-- Start main section -->
+
+<div class="container py-2 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+            <div class="card card-registration card-registration-2" style="border-radius: 20px; overflow: hidden;">
+                <div class="card-body p-0" style="background-color: #c7d2fe;">
+                    <div class="row mb-4 d-flex justify-content-between align-items-center"
+                        style="margin-left: 40px; margin-top: 27px;">
+                        <hr class="my-4">
+                        {% if items == 0 %}
+                        <!-- <p>Add Some Products</p> -->
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 col-lg-2 col-xl-2">
+                                <img src="{% static './assets/images/cart.png' %}" class="img-fluid rounded-3"
+                                    alt="Cart Is Empty">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <h6 class="text-black mb-0">Add Some Products <a href="/home">here</a></h6>
+                            </div>
+
+                        </div>
+
+                        <hr class="my-4">
+                        {% else %}
+                        {% for x in data %}
+                        <div class="col-md-2">
+                            <img src="{{x.pid.pimage.url}}"
+                                style="max-width: 100%; max-height: 100%; border-radius: 20px; border: 3px solid black;"
+                                alt="{{x.pid.name}}">
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="text-black mb-0">{{x.pid.name}}</h6>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="mb-0">Rs. {{x.pid.price}}/-</h6>
+                        </div>
+                        <div class="col-md-2 d-flex">
+                            <a href="/updateqty/0/{{x.id}}"><button class="btn btn-link px-2"><i class="fa fa-minus"
+                                        style="color: black;"></i></button></a>
+                            <input class="form-control form-control-sm" type="number" value="{{x.qty}}"
+                                style="width: 60px;">
+                            <a href="/updateqty/1/{{x.id}}"><button class="btn btn-link px-2"><i class="fa fa-plus"
+                                        style="color: black;"></i></button></a>
+                        </div>
+                        <div class="col-md-1">
+                            <h6 class="mb-0">Total: Rs. {{total}}</h6>
+                        </div>
+                        <div class="col-md-1" style="width: 5px;">
+                            <a href="/remove/{{x.id}}" class="text-muted"><i class="fa fa-close"></i></a>
+                        </div>
+                        <div class="col-md-1" style="margin-right: 30px;">
+
+                            {% if items > 0 %}
+
+                            <a href="/placeorder"><button type="button" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-primary btn-block btn-lg" data-mdb-ripple-color="dark">Place
+                                    Order</button></a>
+
+                            {% else %}
+                            <button type="button" class="btn btn-primary btn-block btn-lg disabled" disabled>Place
+                                Order</button>
+
+                            <!-- <a href="/placeorder"><button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block btn-lg" data-mdb-ripple-color="dark">Place Order</button></a> -->
+                        </div>
+                        {% endif %}
+                    </div>
+
+
+
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End main section -->
+
+{% endblock 'main' %}

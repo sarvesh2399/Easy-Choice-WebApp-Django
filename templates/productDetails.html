@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% load static %}
+
+
+<!-- Start main section -->
+
+    <div class="container py-2 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+                <div class="card card-registration card-registration-2" style="border-radius: 20px; overflow: hidden;">
+                    <div class="card-body p-0" style="background-color: #c7d2fe;">
+                        <div class="row mt-1" style="margin-left: 40px; margin-bottom: 50px;">
+                            {% for x in products %}
+                            <div class="col-md-6 mt-5" style="width: 300px; height: 300px;">
+                                <img src="{{x.pimage.url}}"
+                                    style="max-width: 100%; max-height: 100%; border-radius: 20px; border: 3px solid black;">
+                            </div>
+                            <div class="col-md-6 mt-5">
+                                <p><b>Product Name:</b>&nbsp;&nbsp;&nbsp; {{x.name}}</p>
+                                <p><b>Price:</b>&nbsp;&nbsp;&nbsp; Rs. {{x.price}}</p>
+                                <p><b>Category:</b>&nbsp;&nbsp;&nbsp; {{x.cat}}</p>
+                                <br>
+                                <a href="/addtocart/{{x.id}}" class="btn btn-primary">Add to Cart</a> &nbsp;&nbsp;
+                                <a href="/cart" class="btn btn-primary">View Cart</a> &nbsp;&nbsp;
+                                <a href="/home" class="btn btn-primary">Shop More</a>
+                            </div>
+                            {% if success %}
+                            <div class="alert alert-success mt-5">
+                                {{success}}
+                            </div>
+                            {% endif %}
+                            {% if msg %}
+                            <div class="alert alert-danger mt-5">
+                                {{msg}}
+                            </div>
+
+                            {% endif %}
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End main section -->
+
+    {% endblock 'main' %}

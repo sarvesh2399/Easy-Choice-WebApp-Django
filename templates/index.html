@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% load static %}
+
+
+
+
+    <!-- Start Main Page -->
+    <!-- Start carousel -->
+
+    <div class="mainpage container-fluid" style="margin-top: 10px; width: 98%;">
+        <div class="row mt-3">
+            <!-- col 1/filter section -->
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="{% static 'assets/images/car1.jpg' %}" class="d-block w-100" height="140" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="{% static 'assets/images/car2.jpg' %}" class="d-block w-100" height="140" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="{% static 'assets/images/car3.jpg' %}" class="d-block w-100" height="140" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Start carousel -->
+
+            <!-- col 2/cards section -->
+            <div class="col-md-12">
+                <!-- <h3>Products</h3> -->
+                <!-- Row 1 -->
+                <div class="row" style="margin-top: 20px;">
+                    {% for x in products %}
+                    <!-- Card 1 -->
+                    <div class="col-md-2" style="margin-bottom: 20px;">
+                        <div class="card" style="height: 360px; width: 100%; background-color: #c7d2fe;">
+                            <div class="text-center" style="height: 170px; width: 100%; margin-top: 15px;">
+                                <img src="{{x.pimage.url}}" class="card-img-top" alt="..." style="height: 100%; width: 60%;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{x.name}}</h5>
+                                <p class="card-text">Rs.{{x.price}}</p>
+                                <a href="/pdetails/{{x.id}}" class="btn btn-primary">See details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- End cards section -->
+
+
+        <!-- End Main Page -->
+    </div>
+
+    {% endblock 'main' %}

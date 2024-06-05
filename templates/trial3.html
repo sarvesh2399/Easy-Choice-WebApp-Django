@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static './assets/css/bootstrap.min.css' %}">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="{% static './assets/css/all.min.css' %}">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Your website content goes here -->
+    </div>
+
+    <!-- Start Footer -->
+    <div class="footer row mt-5 p-3" style="background-color: #a5b4fc; border-radius: 10px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+        <!-- Col1 -->
+        <div class="col-md-4 text-center">
+            <h5 style="color: #fff;">Address</h5>
+            <hr style="border-color: #fff;">
+            <p style="color: #fff;">Blooming Dale, Sector 32A, PCNTDA, Ravet, Akurdi, Pune, Pin-412101</p>
+        </div>
+        <!-- Col2 -->
+        <div class="col-md-4 text-center">
+            <h5 style="color: #fff;">Quick Links</h5>
+            <hr style="border-color: #fff;">
+            <p><a href="/home" style="color: #fff; text-decoration: none;">Home</a></p>
+            <p><a href="about.html" style="color: #fff; text-decoration: none;">About</a></p>
+            <p><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></p>
+        </div>
+        <!-- Col3 -->
+        <div class="col-md-4 text-center">
+            <h5 style="color: #fff;">Connect Us</h5>
+            <hr style="border-color: #fff;">
+            <h4><a href="https://www.facebook.com/" style="color: #3b5998;"><i class="bi bi-facebook"></i></a></h4>
+            <h4><a href="https://www.instagram.com/" style="color: #e4405f;"><i class="bi bi-instagram"></i></a></h4>
+            <h4><a href="https://www.twitter.com/" style="color: #1da1f2;"><i class="bi bi-twitter"></i></a></h4>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- jQuery -->
+    <script src="{% static './assets/js/jquery.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static './assets/js/bootstrap.min.js' %}"></script>
+    <!-- Your Custom JS -->
+    <script src="{% static './assets/js/main.js' %}"></script>
+</body>
+
+</html>

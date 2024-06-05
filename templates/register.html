@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static './assets/css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="row mt-5">
+
+            <div class="col-md-4 shadow mt-2 p-4 mx-auto"
+                style="background-color: #c7d2fe; border: 1px solid blue; border-radius: 15px">
+                <h3 class="text-center">Register</h3>
+                {% if errmsg %}
+                <div class="alert alert-danger">
+                    {{errmsg}}
+                </div>
+                {% endif %}
+                <div class="row mt-2" style="text-align: center;">
+                    <div class="col-12">
+                        <a href="/home"><img src="{% static './assets/images/logo2.jpg' %}" alt="Easy Choice" style="width: 70px; height: 70px;"></a>
+
+                    </div>
+                </div>
+                <form action="/register" method="POST">
+                    {% csrf_token %}
+                    <!-- <div class="mb-3">
+                        <label for="input4" class="fom-label">First Name:</label>
+                        <input type="text" name="name" class="form-control" id="input4" placeholder="First Name">
+                    </div> -->
+                    <div class="mb-3">
+                        <label for="input1" class="fom-label">Username:</label>
+                        <input type="email" name="uname" class="form-control" id="input1" placeholder="Email/Username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input2" class="fom-label">Password:</label>
+                        <input type="password" name="upass" class="form-control" id="input2" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input3" class="fom-label">Confirm Password:</label>
+                        <input type="password" name="ucpass" class="form-control" id="input3" placeholder="Confirm Password">
+                    </div>
+                    <div class="button mb-3">
+                        <input type="submit" class="btn btn-primary" value="Register">
+                        <br>
+                        <hr>
+                        <h6>Already have an account? <a href="/login">Login Here</a></h6>
+                    </div>
+                    {% if success %}
+                    <div class="alert alert-success">
+                        {{success}}
+                    </div>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- </div> -->
+
+
+    <script src="{% static './assets/js/main.js' %}"></script>
+    <script src="{% static './assets/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock 'main' %}
