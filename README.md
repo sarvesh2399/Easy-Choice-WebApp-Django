@@ -1,7 +1,8 @@
 ## Easy Choice Web App Documentation
 
 
-![Screenshot 2024-06-06 001527](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/6d3d0007-5750-4508-a94b-6ac14e5468b3)
+<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/6d3d0007-5750-4508-a94b-6ac14e5468b3" alt="Screenshot 2024-06-06 001527" width="600" height="300">
+
 
 -----
 
