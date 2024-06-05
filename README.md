@@ -9,14 +9,12 @@
 ### 1. Introduction:
 
 + Easy Choice is an e-commerce web application similar to Amazon, focused exclusively on stationery items.
-+ It is developed using the Django framework along with HTML, CSS, JavaScript, and Python.
++ It is developed using the Django framework along with HTML, CSS, JavaScript, Bootstrap, MySQL and Python.
 + Here is a short review video of the project.
 
-<video width="600" height="300" controls>
-  <source src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6" type="video/mp4">
-</video>
+https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6
 
-
+[![Watch the video](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6/VIDEO_THUMBNAIL_IMAGE.jpg)](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6/VIDEO_URL)
 
 
 -----
@@ -37,8 +35,8 @@
 
 <img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/5fbde7b8-021c-45ee-b320-924313a2d6c6" alt="Screenshot 2024-06-06 001838" width="600" height="300">
 
-
 <img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/465c50f3-4edf-4d1f-a516-84f0c933288d" alt="Screenshot" width="600" height="300">
+
 
 
 -----
