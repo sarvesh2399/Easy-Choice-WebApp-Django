@@ -12,6 +12,12 @@
 + It is developed using the Django framework along with HTML, CSS, JavaScript, and Python.
 + Here is a short review video of the project.
 
+<video width="600" height="300" controls>
+  <source src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/2ab014e6-473a-4f44-b922-44dd7ab615c6" type="video/mp4">
+</video>
+
+
+
 
 -----
 
@@ -26,7 +32,6 @@
 + Secure Payments: Payments can be made via Razorpay, ensuring a secure transaction process.
 
 <img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/70f0e3a2-d9b8-4468-97a9-0dd377d6ee66" alt="Screenshot 2024-06-06 001829" width="600" height="300">
-)
   
 + Automated Order Confirmation: Upon successful payment, users receive an automated email confirming their recent purchases.
 
