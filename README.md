@@ -19,7 +19,7 @@ https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/9003
 + User Registration: Users can register by creating a username and password.
 + Profile Section: Users will be able to see their registered credentials in the Profile section.
 
-<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/ce5d83eb-0bd5-4468-ae58-8f60ca38187c" alt="Screenshot 2024-06-06 001558" width="100">
+<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/ce5d83eb-0bd5-4468-ae58-8f60ca38187c" alt="Screenshot 2024-06-06 001558" width="500" height="100">
 
 
   
