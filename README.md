@@ -6,11 +6,10 @@
 -----
 
 ### 1. Introduction:
-_
+
 + Easy Choice is an e-commerce web application similar to Amazon, focused exclusively on stationery items.
 + It is developed using the Django framework along with HTML, CSS, JavaScript, and Python.
 + Here is a short review video of the project.
-_
 https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/9003ec3d-542b-434d-8e2e-57509bad6e51
 
 -----
@@ -20,7 +19,8 @@ https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/9003
 + User Registration: Users can register by creating a username and password.
 + Profile Section: Users will be able to see their registered credentials in the Profile section.
 
-![Screenshot 2024-06-06 001558](https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/ce5d83eb-0bd5-4468-ae58-8f60ca38187c)
+<img src="https://github.com/sarvesh2399/Easy-Stationery-ECom-WebApp/assets/111177716/ce5d83eb-0bd5-4468-ae58-8f60ca38187c" alt="Screenshot 2024-06-06 001558" width="100">
+
 
   
 + Product Selection: Once logged in, users can browse and purchase stationery items by filtering specific products.
